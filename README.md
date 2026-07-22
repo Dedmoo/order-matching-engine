@@ -9,6 +9,18 @@ Price-time priority limit order book for a single instrument. Useful for studyin
 - Partial fills, resting liquidity and cancel
 - Deterministic trade prints
 
+## Scope (honest)
+
+This is a learning / portfolio matching engine, not an exchange-grade system.
+
+| Capability | Status |
+|------------|--------|
+| Single-instrument price-time priority book (limit + market orders) | Implemented |
+| Partial fills, resting liquidity, cancel | Implemented |
+| Persistence of the order book / trade history | Not included (in-memory per process, by design for a matching engine library) |
+| Multi-instrument routing, risk checks, clearing/settlement | Not included |
+| Network protocol / exchange connectivity (FIX, WebSocket, etc.) | Not included (pure Python library) |
+
 ## How matching works
 
 ```mermaid
